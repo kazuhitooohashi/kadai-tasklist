@@ -90,8 +90,8 @@ class TasksController extends Controller
             ]);
         }
         
-        // 前のURLへリダイレクトさせる
-        return back();
+        // トップページへリダイレクトさせる
+        return redirect('/');
     }
     
 
@@ -115,8 +115,8 @@ class TasksController extends Controller
                 'task' => $task,
             ]);
         }
-        // 前のURLへリダイレクトさせる
-        return back();
+        // トップページへリダイレクトさせる
+        return redirect('/');
     }
 
     /**
@@ -161,7 +161,7 @@ class TasksController extends Controller
             $task->delete();
         }
 
-        // 前のURLへリダイレクトさせる
+        // トップページへリダイレクトさせる
         return redirect('/');
     }
 }
